@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_top_leader"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:src="@drawable/top_leaner"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/img_top_leader"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/leader_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="john doe"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/leader_descripion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="223 learning in Cameroon"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/md_grey_600"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
