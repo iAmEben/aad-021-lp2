@@ -1,4 +1,4 @@
-# aad-021-lp2
+# The Google Andela Developers Scholarship Project
 project phase II
 
 Task list : 
