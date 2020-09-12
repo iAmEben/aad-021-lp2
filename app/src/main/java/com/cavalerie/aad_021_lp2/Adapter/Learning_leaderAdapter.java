@@ -48,14 +48,14 @@ public class Learning_leaderAdapter extends RecyclerView.Adapter<Learning_leader
     public class LeaderViewHolder extends RecyclerView.ViewHolder {
 
         private ImageView img_top_leader;
-        private TextView leader_name, leader_descripion;
+        private TextView leader_name, leader_description;
 
         public LeaderViewHolder(@NonNull View itemView) {
             super(itemView);
 
             img_top_leader = (ImageView) itemView.findViewById(R.id.img_top_leader);
             leader_name = (TextView) itemView.findViewById(R.id.leader_name);
-            leader_descripion = (TextView) itemView.findViewById(R.id.leader_descripion);
+            leader_description = (TextView) itemView.findViewById(R.id.leader_descripion);
         }
 
         public void bind(Leader leader) {
@@ -64,7 +64,7 @@ public class Learning_leaderAdapter extends RecyclerView.Adapter<Learning_leader
             Glide.with(context).load(leader.getBadgeUrl()).into(img_top_leader);
 
             leader_name.setText(leader.getName());
-            leader_descripion.setText(leader.getHours() + " learning hours, " + leader.getCountry());
+            leader_description.setText(leader.getHours() + " learning hours, " + leader.getCountry());
 
         }
     }

@@ -45,4 +45,5 @@ public class Leader {
     public void setBadgeUrl(String badgeUrl) {
         this.badgeUrl = badgeUrl;
     }
+
 }

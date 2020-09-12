@@ -6,11 +6,10 @@
     android:background="#fff"
     tools:context=".Fragment.SkillIQLeaderFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Skill IQ Fragment"
-        android:layout_centerInParent="true"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/iqRecyclerView"
+        android:layout_width="match_parent"
+        tools:listitem="@layout/fragment_skill_i_q_leader_model"
+        android:layout_height="match_parent"/>
 
 </RelativeLayout>

@@ -18,12 +18,14 @@ public class MainActivity extends AppCompatActivity {
     private MainAdapter adapter;
     private ViewPager viewPager;
     private TabLayout tabLayout;
+
     Button btnSubmit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         initID();
         initAction();
